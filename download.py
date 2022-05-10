@@ -102,7 +102,7 @@ if total_photos > api.total_results:
     total_photos = api.total_results
     print("Not enough photos, downloading {} photos instead".format(total_photos))
 # Create directory if does not exists
-path = os.path.join(path, query.replace(" ", "-"))
+#path = os.path.join(path, query.replace(" ", "-"))
 if not os.path.isdir(path):
     os.mkdir(path)
 print("Writing to main folder: {}".format(path))
